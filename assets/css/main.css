@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff; }
+  body .central {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+.caracterist .caracteristBody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repet(2, 1 fr);
+  grid-gap: 1rem 0.5rem; }
+
+@media (min-width: 768px) {
+  .caracterist .caracteristBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 1rem 0.5rem; } }
+.precios .tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repet(2, 1 fr);
+  grid-gap: 1rem 0.5rem; }
+
+@media (min-width: 768px) {
+  .precios .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr; } }
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0.5rem; }
+  nav .navLogo {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  nav .navOptions {
+    align-self: center;
+    padding-left: 3rem;
+    text-decoration: none; }
+    nav .navOptions ul {
+      text-decoration: none; }
+      nav .navOptions ul li {
+        display: inline-block;
+        padding-left: 1rem;
+        text-decoration: none; }
+        nav .navOptions ul li a {
+          text-decoration: none;
+          color: #333745; }
+  nav .navBotones {
+    align-self: center;
+    margin-right: 1rem;
+    margin-left: auto; }
+
+header {
+  width: 100%; }
+  header .headerMain .headerLogo {
+    background: url("../img/bg-hero.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+    position: relative; }
+    header .headerMain .headerLogo .headerText {
+      position: absolute;
+      width: 20%;
+      top: 10%;
+      left: 10%; }
+
+@keyframes fadeInGrafico {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.caracterist {
+  text-align: center;
+  padding-top: 2rem; }
+  .caracterist h2 {
+    font-size: 45px; }
+  .caracterist .caracteristBody {
+    margin-top: 2rem; }
+    .caracterist .caracteristBody .caracteristGrafico {
+      display: inline-block;
+      opacity: 0;
+      animation: fadeInGrafico 2s linear 100ms 1 forwards; }
+    .caracterist .caracteristBody .caracteristText {
+      display: inline-block; }
+      .caracterist .caracteristBody .caracteristText h2 {
+        font-size: 30px; }
+      .caracterist .caracteristBody .caracteristText p {
+        font-size: 16px; }
+
+@media (min-width: 768px) {
+  .caracterist {
+    text-align: center;
+    padding-top: 2rem; }
+    .caracterist .caracteristBody {
+      margin-top: 2rem; }
+      .caracterist .caracteristBody .caracteristGrafico {
+        display: inline-block;
+        padding-left: 45%;
+        padding-right: 5%;
+        opacity: 0;
+        animation: fadeInGrafico 2s linear 100ms 1 forwards; }
+      .caracterist .caracteristBody .caracteristText {
+        display: inline-block;
+        padding-left: 5%;
+        padding-right: 45%;
+        display: inline-block; } }
+.precios {
+  border: 1px solid black;
+  background: url("../img/bg-price.svg");
+  background-position: unset;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100rem; }
+  .precios h2 {
+    margin-top: 13rem;
+    background: yellow;
+    text-align: center;
+    margin-bottom: 3rem; }
+  .precios .tarjetas {
+    padding-left: 10%;
+    padding-right: 10%; }
+    .precios .tarjetas .tarjetasContainer {
+      width: 100%;
+      background: cadetblue; }
+      .precios .tarjetas .tarjetasContainer .card {
+        background: #fff;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto; }
+        .precios .tarjetas .tarjetasContainer .card .cardHeader {
+          height: 6rem;
+          margin-left: 10%;
+          margin-right: 10%; }
+          .precios .tarjetas .tarjetasContainer .card .cardHeader p {
+            margin-top: auto;
+            margin-bottom: auto; }
+            .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem1 {
+              font-family: "Open Sans", sans-serif;
+              font-size: 35px;
+              font-weight: 400; }
+            .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem2 {
+              font-family: "Raleway", sans-serif;
+              font-size: 35px;
+              font-weight: 700; }
+        .precios .tarjetas .tarjetasContainer .card .card-body {
+          border-top: 1px solid #c7c8cc;
+          border-bottom: 1px solid #c7c8cc; }
+          .precios .tarjetas .tarjetasContainer .card .card-body ul {
+            margin-left: 1.5rem; }
+            .precios .tarjetas .tarjetasContainer .card .card-body ul li {
+              padding-left: 0.5rem;
+              padding-right: 0.5rem; }

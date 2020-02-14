@@ -1,0 +1,46 @@
+//GRILLAS
+
+
+.caracterist .caracteristBody{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repet(2, 1 fr) ;
+    grid-gap: 1rem 0.5rem;
+
+}
+
+.precios .tarjetas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repet(2, 1 fr) ;
+    grid-gap: 1rem 0.5rem;
+}
+
+@media (min-width:768px){
+    .caracterist .caracteristBody{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr, 1fr ;
+        grid-gap: 1rem 0.5rem;
+        // border: 3px solid #000;
+    }
+
+    .precios .tarjetas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr, 1fr ;
+        // grid-gap: 1rem 4rem;
+    
+    }
+}
+
+
+// @media (min-width:768px){
+//     .precios .tarjetas{
+//         display: grid;
+//         grid-template-columns: repeat(2, 1fr);
+//         grid-template-rows: 1fr, 1fr ;
+//         // grid-gap: 1rem 4rem;
+    
+//     }
+// }

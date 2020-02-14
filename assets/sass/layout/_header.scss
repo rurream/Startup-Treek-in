@@ -1,0 +1,188 @@
+//Header
+
+header {
+  width: 100%;
+  margin-top: 2rem;
+
+  .headerMain {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+
+    .headerLogo {
+      background: url("../img/bg-hero.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      height: 20rem;
+      width: 100%;
+      order: 2;
+    }
+    .headerText {
+      order: 1;
+      width: 100%;
+      height: auto;
+
+      h1 {
+        font-family: $raleway;
+        font-size: $xxx-large;
+        font-weight: $bold;
+        color: $RaisingBlack;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      p {
+        padding-top: 1rem;
+        font-family: $openSans;
+        font-size: $medium;
+        font-weight: $regular;
+        color: $RaisingBlack;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  header {
+    // width: 100%;
+    // margin-top: 2rem;
+
+    .headerMain {
+      width: 100%;
+      height: 40rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+
+      .headerLogo {
+        // background: url("../img/bg-hero.svg");
+        // background-position: top;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+
+        height: 25rem;
+        // width: 100%;
+        order: 2;
+      }
+      .headerText {
+        order: 1;
+        width: 100%;
+        // max-width: 20rem;
+        height: auto;
+
+        h1 {
+          // font-family: $raleway;
+          // font-size: $xxx-large;
+          // font-weight: $bold;
+          // color: $RaisingBlack;
+          // margin-left: 10%;
+          // margin-right: 10%;
+        }
+        p {
+          // padding-top: 1rem;
+          // font-family: $openSans;
+          // font-size: $medium;
+          // font-weight: $regular;
+          // color: $RaisingBlack;
+          // margin-left: 10%;
+          // margin-right: 10%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 500px) {
+    header {
+      // width: 100%;
+      // margin-top: 2rem;
+  
+      .headerMain {
+        // width: 100%;
+        // height: 40rem;
+        // display: flex;
+        // flex-wrap: wrap;
+        // flex-direction: column;
+  
+        .headerLogo {
+          // background: url("../img/bg-hero.svg");
+          // background-position: top;
+          // background-repeat: no-repeat;
+          // background-size: cover;
+  
+          height: 30rem;
+          // width: 100%;
+          // order: 2;
+        }
+        .headerText {
+          // order: 1;
+          // width: 100%;
+          // height: auto;
+  
+          h1 {
+            // font-family: $raleway;
+            // font-size: $xxx-large;
+            // font-weight: $bold;
+            // color: $RaisingBlack;
+            // margin-left: 10%;
+            // margin-right: 10%;
+          }
+          p {
+            // padding-top: 1rem;
+            // font-family: $openSans;
+            // font-size: $medium;
+            // font-weight: $regular;
+            // color: $RaisingBlack;
+            // margin-left: 10%;
+            // margin-right: 10%;
+          }
+        }
+      }
+    }
+  }
+@media (min-width: 768px) {
+  header {
+    // width: 100%;
+    // margin-top: 2rem;
+
+    .headerMain {
+      // height: 40rem;
+      position: relative;
+
+      .headerLogo {
+        background: url("../img/bg-hero.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+      }
+      .headerText {
+        position: absolute;
+        width: 80%;
+        max-width: 25rem;
+        top: 1rem;
+        left: 5rem;
+
+        h1 {
+          font-family: $raleway;
+          font-size: $xxx-large;
+          font-weight: $bold;
+          color: $RaisingBlack;
+        }
+        p {
+          padding-top: 1rem;
+          font-family: $openSans;
+          font-size: $medium;
+          font-weight: $regular;
+          color: $RaisingBlack;
+        }
+      }
+    }
+  }
+}

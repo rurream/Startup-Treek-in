@@ -7,7 +7,7 @@
     <title>Startup Treek-in</title>
 
     <!-- GoogleFonts -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap" rel="stylesheet">
 
     <!-- Iconos-Imágenes de FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -23,7 +23,7 @@
 </head>
 <body>
     
-    <nav>
+    <nav class=" central">
         <div class="navLogo"><img src="assets/img/Logo.svg" alt="logo"></div>
         <div class="navOptions">
             <ul>
@@ -33,56 +33,93 @@
             </ul>
         </div>
         <div class="navBotones">
-            <button class="navBotonInactivo">Iniciar Sesión</button>
-            <button class="navBotonActivo">Regístrate</button>
+            <button class="navBotonInactivo btNuevoChico">Iniciar Sesión</button>
+            <button class="navBotonActivo btNormalChico respuestaBtn">Regístrate</button>
         </div>
-        <div class="navHamburguesa"></div>
+        <div class="navHamburguesa" id="navHamburguesa"><i class="fas fa-bars"></i></div>
     </nav>
+    <div class="menuHamburgesa" id="menuHamburgesa">
+        <ul>
+            <li><a href="#" class="optionHambur">Acerca de</a></li>
+            <li><a href="#" class="optionHambur">Carcterísticas</a></li>
+            <li><a href="#" class="optionHambur">Precios</a></li>
+        </ul>
+        <button class="navBotonInactivo btNuevoChico optionHambur">Iniciar Sesión</button>
+        <button class="navBotonActivo btNormalChico optionHambur respuestaBtn">Regístrate</button>
+    </div>
+    
 
 
-    <header>
-        <div class="headerLogo"></div>
-        <div class="headerText">
-            <h1>Haz Trekking sin Parar</h1>
-            <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
+    
+    <header >
+        <div class="headerMain">
+            <div class="headerLogo">
+                
+            </div>
+            <div class="headerText">
+                <h1>Haz Trekking sin Parar</h1>
+                <p>Con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
+            </div>
         </div>
     </header>
-
+    
 
     <section class="caracterist">
         <h2>Características</h2>
-        <div class="caracteristGrafico"></div>
-        <div class="caracteristText"></div>
+        <div class="caracteristBody">
+            <div class="caracteristGrafico">
+                <!-- <object data="assets/img/bar-graph.svg" type="image/svg+xml"></object>
+                <img src="assets/img/bar-graph.png" alt="grafico"> -->
+                <img src="assets/img/bar-graph.svg" alt="grafico" class="caracteristGrafico-img">
+            </div>
+            <div class="caracteristText">
+                <h2>Estadísticas de tu progreso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores perspiciatis officiis obcaecati cum qui amet. Aspernatur recusandae excepturi nostrum fuga hic suscipit quibusdam unde eligendi quam dicta, maxime magnam!</p>
+            </div>
+        </div>
     </section>
 
     <section class="precios">
+        <!-- <img src="assets/img/bg-price.svg" alt="fondo" class="preciosFondo">  -->
         <h2>Precios</h2>
         <div class="tarjetas">
-            <div class="row">
-                <div class="card-deck">
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                        <div class="card">
-                            <p class="preciosCardItem1"></p>
-                            <p class="preciosCardItem2"></p>
-                            <div class="card-body">
-                              <ol>
-                                  <li></li>
-                              </ol>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
+            <div class="tarjetasContainer">
+                <div class="card">
+                    <div class="cardHeader">
+                        <p class="preciosCardItem1">Trekk-in Free</p>
+                        <p class="preciosCardItem2">$ 0 / mes</p>
                     </div>
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
-                        <div class="card">
-                            <p class="preciosCardItem1"></p>
-                            <p class="preciosCardItem2"></p>
-                            <div class="card-body">
-                              <ol>
-                                  <li></li>
-                              </ol>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                          </div>
+                    
+                    <div class="card-body">
+                        <ul type="disc">
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                        </ul>
+                    </div>
+                    <div class="preciosCardBoton">
+                        <button class="preciosCardBoton-large-normal btnRegularGrande respuestaBtn">Obtén Free</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tarjetasContainer">
+                <div class="card">
+                    <div class="cardHeader">
+                        <p class="preciosCardItem1">Trekk-in Free</p>
+                        <p class="preciosCardItem2">$ 3500 / mes</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <ul type="disc">
+                            <li>Ver mapas creado por usuarios</li>
+                            <li>Conectar con otros usuarios</li>
+                            <li>Definir mejores rutas</li>
+                            <li>Mapas Offline</li>
+                            <li>Integración con otras aplicaciones</li>
+                        </ul>
+                    </div>
+                    <div class="preciosCardBoton">
+                        <button class="preciosCardBoton-large-normal btnRegularGrande respuestaBtn">Obtén Premium</button>
                     </div>
                 </div>
             </div>
@@ -94,14 +131,14 @@
 
 
     <footer>
-        <div>
-            <div>
-                <a href="#"></a>
-                <a href="#"></a>
-                <a href="#"></a>
+        <div class="footerMain">
+            <div class="footerMainOpciones">
+                <a href="#">Legal</a>
+                <a href="#">Cookies</a>
+                <a href="#">Sobre anuncios</a>
             </div>
-            <div>
-                <a href="#"></a>
+            <div class="footerMainDerechos">
+                <a href="#">© 2018 Trekk-in SPA.</a>
             </div>
         </div>
     </footer>

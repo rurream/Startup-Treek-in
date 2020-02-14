@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #fff; }
+  body .central {
+    max-width: 1200px;
+    margin: 0 auto; }
+
+@keyframes fadeInGrafico {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes sobreadoAbajoIzq {
+  0% {
+    box-shadow: none; }
+  100% {
+    box-shadow: -5px 5px 5px #e8e8e8; } }
+.caracterist .caracteristBody {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repet(2, 1 fr);
+  grid-gap: 1rem 0.5rem; }
+
+.precios .tarjetas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repet(2, 1 fr);
+  grid-gap: 1rem 0.5rem; }
+
+@media (min-width: 768px) {
+  .caracterist .caracteristBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-gap: 1rem 0.5rem; }
+
+  .precios .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 1fr; } }
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  nav .navLogo {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  nav .navOptions {
+    align-self: center;
+    padding-left: 3rem;
+    text-decoration: none;
+    display: none; }
+    nav .navOptions ul {
+      text-decoration: none; }
+      nav .navOptions ul li {
+        display: inline-block;
+        padding-left: 1rem;
+        text-decoration: none; }
+        nav .navOptions ul li a {
+          text-decoration: none;
+          color: #333745; }
+  nav .navBotones {
+    align-self: center;
+    margin-right: 2rem;
+    margin-left: auto;
+    display: none; }
+  nav .navHamburguesa {
+    align-self: center;
+    margin-right: 2rem;
+    margin-left: auto;
+    display: block; }
+    nav .navHamburguesa .fa-bars {
+      font-size: 35px; }
+
+.menuHamburgesa {
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  transform: scale(0, 0);
+  border-bottom: 1px solid #8f9199;
+  transition: transform 1000ms linear; }
+  .menuHamburgesa ul {
+    text-decoration: none; }
+    .menuHamburgesa ul li {
+      padding-left: 1rem;
+      margin-bottom: 0.5rem;
+      list-style: none; }
+      .menuHamburgesa ul li a {
+        text-decoration: none;
+        color: #726f73;
+        font-family: "Raleway", sans-serif;
+        font-size: 16px;
+        font-weight: 700; }
+  .menuHamburgesa .navBotonInactivo {
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem; }
+  .menuHamburgesa .navBotonActivo {
+    display: block;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem; }
+
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
+    nav .navLogo {
+      padding-left: 1rem;
+      padding-right: 1rem; }
+    nav .navOptions {
+      align-self: center;
+      padding-left: 3rem;
+      text-decoration: none;
+      display: block; }
+      nav .navOptions ul {
+        text-decoration: none; }
+        nav .navOptions ul li {
+          display: inline-block;
+          padding-left: 1rem;
+          text-decoration: none; }
+          nav .navOptions ul li a {
+            text-decoration: none;
+            color: #726f73;
+            font-family: "Raleway", sans-serif;
+            font-size: 16px;
+            font-weight: 400; }
+    nav .navBotones {
+      align-self: center;
+      margin-right: 2rem;
+      margin-left: auto;
+      display: block; }
+    nav .navHamburguesa {
+      align-self: center;
+      margin-right: 1rem;
+      margin-left: auto;
+      display: none; } }
+header {
+  width: 100%;
+  margin-top: 2rem; }
+  header .headerMain {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start; }
+    header .headerMain .headerLogo {
+      background: url("../img/bg-hero.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 20rem;
+      width: 100%;
+      order: 2; }
+    header .headerMain .headerText {
+      order: 1;
+      width: 100%;
+      height: auto; }
+      header .headerMain .headerText h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #221d23;
+        margin-left: 10%;
+        margin-right: 10%; }
+      header .headerMain .headerText p {
+        padding-top: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #221d23;
+        margin-left: 10%;
+        margin-right: 10%; }
+
+@media (min-width: 400px) {
+  header .headerMain {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    header .headerMain .headerLogo {
+      height: 25rem;
+      order: 2; }
+    header .headerMain .headerText {
+      order: 1;
+      width: 100%;
+      height: auto; } }
+@media (min-width: 500px) {
+  header .headerMain .headerLogo {
+    height: 30rem; } }
+@media (min-width: 768px) {
+  header .headerMain {
+    position: relative; }
+    header .headerMain .headerLogo {
+      background: url("../img/bg-hero.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+      width: 100%; }
+    header .headerMain .headerText {
+      position: absolute;
+      width: 80%;
+      max-width: 25rem;
+      top: 1rem;
+      left: 5rem; }
+      header .headerMain .headerText h1 {
+        font-family: "Raleway", sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: #221d23; }
+      header .headerMain .headerText p {
+        padding-top: 1rem;
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #221d23; } }
+.caracterist {
+  padding-top: 2rem; }
+  .caracterist h2 {
+    font-size: 45px;
+    text-align: center;
+    font-family: "Raleway", sans-serif; }
+  .caracterist .caracteristBody {
+    margin-top: 2rem; }
+    .caracterist .caracteristBody .caracteristGrafico {
+      height: 14rem;
+      width: 90%;
+      opacity: 0;
+      animation: fadeInGrafico 2s linear 100ms 1 forwards;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
+      .caracterist .caracteristBody .caracteristGrafico .caracteristGrafico-img {
+        width: 100%;
+        height: 100%; }
+    .caracterist .caracteristBody .caracteristText {
+      height: 14rem;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left; }
+      .caracterist .caracteristBody .caracteristText h2 {
+        font-size: 30px;
+        text-align: left;
+        font-family: "Raleway", sans-serif; }
+      .caracterist .caracteristBody .caracteristText p {
+        font-size: 16px;
+        margin-top: 0.5rem;
+        font-family: "Raleway", sans-serif; }
+
+.precios {
+  margin-top: 2rem;
+  border: 1px solid black;
+  background-image: url("../img/bg-price.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .precios h2 {
+    margin-top: 18rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff; }
+  .precios .tarjetas {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3rem; }
+    .precios .tarjetas .tarjetasContainer {
+      width: 100%; }
+      .precios .tarjetas .tarjetasContainer .card {
+        background: #fff;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10%;
+        padding-right: 10%; }
+        .precios .tarjetas .tarjetasContainer .card .cardHeader {
+          padding-top: 2rem;
+          padding-bottom: 1.5rem; }
+          .precios .tarjetas .tarjetasContainer .card .cardHeader p {
+            margin-top: auto;
+            margin-bottom: auto; }
+            .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem1 {
+              font-family: "Open Sans", sans-serif;
+              font-size: 35px;
+              font-weight: 400; }
+            .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem2 {
+              font-family: "Raleway", sans-serif;
+              font-size: 35px;
+              font-weight: 700; }
+        .precios .tarjetas .tarjetasContainer .card .card-body {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-top: 1px solid #c7c8cc;
+          border-bottom: 1px solid #c7c8cc;
+          height: 15rem; }
+          .precios .tarjetas .tarjetasContainer .card .card-body ul {
+            margin-left: 1.5rem; }
+            .precios .tarjetas .tarjetasContainer .card .card-body ul li {
+              padding-left: 0.5rem;
+              padding-right: 0.5rem;
+              padding-bottom: 0.3rem;
+              font-family: "Raleway", sans-serif;
+              font-size: 16px;
+              font-weight: 700;
+              color: #726f73; }
+        .precios .tarjetas .tarjetasContainer .card .preciosCardBoton {
+          margin-top: 2rem;
+          padding-bottom: 2rem; }
+          .precios .tarjetas .tarjetasContainer .card .preciosCardBoton .preciosCardBoton-large-normal {
+            width: 100%;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem; }
+        .precios .tarjetas .tarjetasContainer .card:hover {
+          animation: sobreadoAbajoIzq 500ms linear 1 forwards; }
+
+@media (min-width: 500px) {
+  .precios {
+    margin-top: 3rem;
+    border: 1px solid black;
+    background: url("../img/bg-price.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .precios h2 {
+      margin-top: 16rem; }
+    .precios .tarjetas {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 3rem; }
+      .precios .tarjetas .tarjetasContainer {
+        width: 100%; }
+        .precios .tarjetas .tarjetasContainer .card {
+          background: #fff;
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+          padding-left: 10%;
+          padding-right: 10%; }
+          .precios .tarjetas .tarjetasContainer .card .cardHeader {
+            padding-top: 2rem;
+            padding-bottom: 1.5rem; }
+            .precios .tarjetas .tarjetasContainer .card .cardHeader p {
+              margin-top: auto;
+              margin-bottom: auto; }
+              .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem1 {
+                font-family: "Open Sans", sans-serif;
+                font-size: 35px;
+                font-weight: 400; }
+              .precios .tarjetas .tarjetasContainer .card .cardHeader p.preciosCardItem2 {
+                font-family: "Raleway", sans-serif;
+                font-size: 35px;
+                font-weight: 700; }
+          .precios .tarjetas .tarjetasContainer .card .card-body {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-top: 1px solid #c7c8cc;
+            border-bottom: 1px solid #c7c8cc;
+            height: 10rem; }
+            .precios .tarjetas .tarjetasContainer .card .card-body ul {
+              margin-left: 1.5rem; }
+              .precios .tarjetas .tarjetasContainer .card .card-body ul li {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-bottom: 0.3rem; }
+          .precios .tarjetas .tarjetasContainer .card .preciosCardBoton {
+            margin-top: 2rem;
+            padding-bottom: 2rem; }
+            .precios .tarjetas .tarjetasContainer .card .preciosCardBoton .preciosCardBoton-large-normal {
+              width: 100%;
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem; } }
+@media (min-width: 768px) {
+  .caracterist {
+    padding-top: 2rem; }
+    .caracterist h2 {
+      font-size: 45px;
+      text-align: center;
+      font-family: "Raleway", sans-serif; }
+    .caracterist .caracteristBody {
+      margin-top: 2rem; }
+      .caracterist .caracteristBody .caracteristGrafico {
+        height: 14rem;
+        width: 60%;
+        max-width: 300px;
+        opacity: 0;
+        animation: fadeInGrafico 2s linear 100ms 1 forwards;
+        margin-left: 30%;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+        .caracterist .caracteristBody .caracteristGrafico .caracteristGrafico-img {
+          width: 100%;
+          height: 100%; }
+      .caracterist .caracteristBody .caracteristText {
+        height: 14rem;
+        width: 60%;
+        max-width: 350px;
+        margin-left: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        vertical-align: middle; }
+        .caracterist .caracteristBody .caracteristText h2 {
+          font-size: 30px;
+          text-align: left;
+          font-family: "Raleway", sans-serif; }
+        .caracterist .caracteristBody .caracteristText p {
+          font-size: 16px;
+          margin-top: 0.5rem;
+          font-family: "Raleway", sans-serif; }
+
+  .precios h2 {
+    margin-top: 13rem; }
+  .precios .tarjetas .tarjetasContainer .card {
+    width: 80%; }
+    .precios .tarjetas .tarjetasContainer .card .card-body {
+      height: 10rem; } }
+@media (min-width: 900px) {
+  .caracterist {
+    padding-top: 2rem; }
+    .caracterist h2 {
+      font-size: 45px;
+      text-align: center;
+      font-family: "Raleway", sans-serif; }
+    .caracterist .caracteristBody {
+      margin-top: 2rem; }
+      .caracterist .caracteristBody .caracteristGrafico {
+        height: 14rem;
+        width: 60%;
+        max-width: 300px;
+        opacity: 0;
+        animation: fadeInGrafico 2s linear 100ms 1 forwards;
+        margin-left: 30%;
+        margin-top: 1rem;
+        margin-bottom: 1rem; }
+        .caracterist .caracteristBody .caracteristGrafico .caracteristGrafico-img {
+          width: 100%;
+          height: 100%; }
+      .caracterist .caracteristBody .caracteristText {
+        height: 14rem;
+        width: 60%;
+        max-width: 350px;
+        margin-left: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        vertical-align: middle; }
+        .caracterist .caracteristBody .caracteristText h2 {
+          font-size: 30px;
+          text-align: left;
+          font-family: "Raleway", sans-serif; }
+        .caracterist .caracteristBody .caracteristText p {
+          font-size: 16px;
+          margin-top: 0.5rem;
+          font-family: "Raleway", sans-serif; }
+
+  .precios h2 {
+    margin-top: 13rem; }
+  .precios .tarjetas .tarjetasContainer .card {
+    width: 80%;
+    max-width: 17.5rem; }
+    .precios .tarjetas .tarjetasContainer .card .card-body {
+      height: 10rem; } }
+footer {
+  background-color: #221d23;
+  height: 5rem; }
+  footer .footerMain {
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #e8e8e8; }
+    footer .footerMain .footerMainOpciones {
+      margin-left: auto;
+      margin-right: auto; }
+      footer .footerMain .footerMainOpciones a {
+        text-decoration: none;
+        display: inline-block;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        color: #e8e8e8; }
+    footer .footerMain .footerMainDerechos {
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      padding-top: 0.5rem; }
+      footer .footerMain .footerMainDerechos a {
+        text-decoration: none;
+        color: #e8e8e8; }
+
+@media (min-width: 250px) {
+  footer {
+    background-color: #221d23;
+    height: 5rem; }
+    footer .footerMain {
+      height: 100%;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #e8e8e8;
+      text-align: center; }
+      footer .footerMain .footerMainOpciones {
+        margin-left: auto;
+        margin-right: auto; }
+        footer .footerMain .footerMainOpciones a {
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+          color: #e8e8e8; }
+      footer .footerMain .footerMainDerechos {
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+        padding-top: 0.5rem; }
+        footer .footerMain .footerMainDerechos a {
+          text-decoration: none;
+          color: #e8e8e8; } }
+@media (min-width: 500px) {
+  footer {
+    background-color: #221d23;
+    height: 5rem; }
+    footer .footerMain {
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      font-family: "Open Sans", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #e8e8e8; }
+      footer .footerMain .footerMainOpciones {
+        margin-left: 3rem;
+        margin-right: auto; }
+        footer .footerMain .footerMainOpciones a {
+          text-decoration: none;
+          display: inline-block;
+          margin-right: 1rem;
+          color: #e8e8e8; }
+      footer .footerMain .footerMainDerechos {
+        margin-right: 3rem;
+        margin-left: auto;
+        padding-top: 0; }
+        footer .footerMain .footerMainDerechos a {
+          text-decoration: none;
+          color: #e8e8e8; } }
+.btNormalChico {
+  background-color: #2ab7ca;
+  height: 2rem;
+  width: 6rem;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  border: none;
+  font-weight: 700; }
+
+.btNuevoChico {
+  background-color: #fff;
+  height: 2rem;
+  width: 6rem;
+  font-family: "Raleway", sans-serif;
+  color: #221d23;
+  border: none;
+  font-weight: 700; }
+
+.btnRegularGrande {
+  background-color: #2ab7ca;
+  height: 3rem;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  font-weight: 700; }
+
+.respuestaBtn:hover {
+  background-color: #77d1dd; }
+
+.respuestaBtn:active {
+  background-color: #aeacaf; }

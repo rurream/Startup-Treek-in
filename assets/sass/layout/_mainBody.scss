@@ -1,0 +1,526 @@
+
+// @keyframes sobreadoAbajoDer{
+//   0%{
+//     box-shadow: none;
+//   }
+//   100%{
+//     box-shadow: 5px 5px 5px $Platinum;
+//   }
+// }
+
+.caracterist {
+  padding-top: 2rem;
+
+  h2 {
+    font-size: $xxxx-large;
+    text-align: center;
+    font-family: $raleway;
+  }
+
+  .caracteristBody {
+    margin-top: 2rem;
+
+    .caracteristGrafico {
+      height: 14rem;
+      width: 90%;
+      opacity: 0;
+      animation: fadeInGrafico 2s linear 100ms 1 forwards;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .caracteristGrafico-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .caracteristText {
+      height: 14rem;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      text-align: left;
+
+      h2 {
+        font-size: $x-large;
+        text-align: left;
+        font-family: $raleway;
+      }
+      p {
+        font-size: $medium;
+        margin-top: 0.5rem;
+        font-family: $raleway;
+      }
+    }
+  }
+}
+
+.precios {
+  margin-top: 2rem;
+  border: 1px solid black;
+  background-image: url("../img/bg-price.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  h2 {
+    margin-top: 18rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: $raleway;
+    font-size: $x-large;
+    font-weight: $bold;
+    color: $White;
+  }
+  .tarjetas {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 3rem;
+
+
+    .tarjetasContainer {
+      width: 100%;
+
+      .card {
+        background: $White;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+        .cardHeader {
+          padding-top: 2rem;
+          padding-bottom: 1.5rem;
+
+          p {
+            margin-top: auto;
+            margin-bottom: auto;
+
+            &.preciosCardItem1 {
+              font-family: $openSans;
+              font-size: $xx-large;
+              font-weight: $regular;
+            }
+            &.preciosCardItem2 {
+              font-family: $raleway;
+              font-size: $xx-large;
+              font-weight: $bold;
+            }
+          }
+        }
+
+        .card-body {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          border-top: 1px solid $LavenderGray;
+          border-bottom: 1px solid $LavenderGray;
+          height: 15rem;
+
+          ul {
+            margin-left: 1.5rem;
+
+            li {
+              padding-left: 0.5rem;
+              padding-right: 0.5rem;
+              padding-bottom: 0.3rem;
+              font-family: $raleway;
+              font-size: $medium;
+              font-weight: $bold;
+              color: $Nickel;
+            }
+          }
+        }
+        .preciosCardBoton {
+          margin-top: 2rem;
+          padding-bottom: 2rem;
+
+          .preciosCardBoton-large-normal {
+            width: 100%;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+          }
+        }
+        &:hover{
+          animation: sobreadoAbajoIzq 500ms linear 1 forwards;
+          // animation: sobreadoAbajoDer 500ms linear 1 forwards;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) {
+  .precios {
+    margin-top: 3rem;
+    border: 1px solid black;
+    background: url("../img/bg-price.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+      margin-top: 16rem;
+      // background: yellow;
+      // text-align: center;
+      // margin-bottom: 3rem;
+    }
+    .tarjetas {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 3rem;
+
+      .tarjetasContainer {
+        width: 100%;
+
+        .card {
+          background: $White;
+          width: 60%;
+          margin-left: auto;
+          margin-right: auto;
+
+          padding-left: 10%;
+          padding-right: 10%;
+
+          .cardHeader {
+            padding-top: 2rem;
+            padding-bottom: 1.5rem;
+
+            p {
+              margin-top: auto;
+              margin-bottom: auto;
+
+              &.preciosCardItem1 {
+                font-family: $openSans;
+                font-size: $xx-large;
+                font-weight: $regular;
+              }
+              &.preciosCardItem2 {
+                font-family: $raleway;
+                font-size: $xx-large;
+                font-weight: $bold;
+              }
+            }
+          }
+
+          .card-body {
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            border-top: 1px solid $LavenderGray;
+            border-bottom: 1px solid $LavenderGray;
+            height: 10rem;
+
+            ul {
+              margin-left: 1.5rem;
+
+              li {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                padding-bottom: 0.3rem;
+              }
+            }
+          }
+          .preciosCardBoton {
+            margin-top: 2rem;
+            padding-bottom: 2rem;
+
+            .preciosCardBoton-large-normal {
+              width: 100%;
+              padding-top: 0.5rem;
+              padding-bottom: 0.5rem;
+              // background-color: $BallBlue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .caracterist {
+    padding-top: 2rem;
+
+    h2 {
+      font-size: $xxxx-large;
+      text-align: center;
+      font-family: $raleway;
+    }
+
+    .caracteristBody {
+      margin-top: 2rem;
+      // background: red;
+
+      .caracteristGrafico {
+        height: 14rem;
+        width: 60%;
+        max-width: 300px;
+        opacity: 0;
+        animation: fadeInGrafico 2s linear 100ms 1 forwards;
+        margin-left: 30%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .caracteristGrafico-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .caracteristText {
+        height: 14rem;
+        width: 60%;
+        max-width: 350px;
+        margin-left: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        vertical-align: middle;
+
+        h2 {
+          font-size: $x-large;
+          text-align: left;
+          font-family: $raleway;
+        }
+        p {
+          font-size: $medium;
+          margin-top: 0.5rem;
+          font-family: $raleway;
+        }
+      }
+    }
+  }
+
+
+  .precios {
+    // margin-top: 2rem;
+    // border: 1px solid black;
+    // background: url("../img/bg-price.svg");
+    // background-position: top;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  
+    h2 {
+      margin-top: 13rem;
+      // background: yellow;
+      // text-align: center;
+      // margin-bottom: 3rem;
+    }
+    .tarjetas {
+    //   padding-left: 10%;
+    //   padding-right: 10%;
+    //   padding-bottom: 3rem;
+  
+      .tarjetasContainer {
+        // width: 100%;
+        // background: cadetblue;
+  
+        .card {
+        //   background: $White;
+          width: 80%;
+        //   margin-left: auto;
+        //   margin-right: auto;
+  
+        //   padding-left: 10%;
+        //   padding-right: 10%;
+  
+        //   .cardHeader {
+        //     padding-top: 2rem;
+        //     padding-bottom: 1.5rem;
+  
+        //     p {
+        //       margin-top: auto;
+        //       margin-bottom: auto;
+  
+        //       &.preciosCardItem1 {
+        //         font-family: $openSans;
+        //         font-size: $xx-large;
+        //         font-weight: $regular;
+        //       }
+        //       &.preciosCardItem2 {
+        //         font-family: $raleway;
+        //         font-size: $xx-large;
+        //         font-weight: $bold;
+        //       }
+        //     }
+        //   }
+  
+          .card-body {
+            // padding-top: 1rem;
+            // padding-bottom: 1rem;
+            // border-top: 1px solid $LavenderGray;
+            // border-bottom: 1px solid $LavenderGray;
+            height: 10rem;
+  
+            // ul {
+            //   margin-left: 1.5rem;
+  
+            //   li {
+            //     padding-left: 0.5rem;
+            //     padding-right: 0.5rem;
+            //     padding-bottom: 0.3rem;
+            //   }
+            // }
+          }
+        //   .preciosCardBoton {
+        //     margin-top: 2rem;
+        //     padding-bottom: 2rem;
+  
+        //     .preciosCardBoton-large-normal {
+        //       width: 100%;
+        //       padding-top: 0.5rem;
+        //       padding-bottom: 0.5rem;
+        //       background-color: $BallBlue;
+        //     }
+        //   }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .caracterist {
+    padding-top: 2rem;
+
+    h2 {
+      font-size: $xxxx-large;
+      text-align: center;
+      font-family: $raleway;
+    }
+
+    .caracteristBody {
+      margin-top: 2rem;
+      // background: red;
+
+      .caracteristGrafico {
+        height: 14rem;
+        width: 60%;
+        max-width: 300px;
+        opacity: 0;
+        animation: fadeInGrafico 2s linear 100ms 1 forwards;
+        margin-left: 30%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+        .caracteristGrafico-img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .caracteristText {
+        height: 14rem;
+        width: 60%;
+        max-width: 350px;
+        margin-left: 20%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: left;
+        vertical-align: middle;
+
+        h2 {
+          font-size: $x-large;
+          text-align: left;
+          font-family: $raleway;
+        }
+        p {
+          font-size: $medium;
+          margin-top: 0.5rem;
+          font-family: $raleway;
+        }
+      }
+    }
+  }
+
+
+  .precios {
+    // margin-top: 2rem;
+    // border: 1px solid black;
+    // background: url("../img/bg-price.svg");
+    // background-position: top;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  
+    h2 {
+      margin-top: 13rem;
+      // background: yellow;
+      // text-align: center;
+      // margin-bottom: 3rem;
+    }
+    .tarjetas {
+    //   padding-left: 10%;
+    //   padding-right: 10%;
+    //   padding-bottom: 3rem;
+  
+      .tarjetasContainer {
+        // width: 100%;
+        // background: cadetblue;
+  
+        .card {
+        //   background: $White;
+          width: 80%;
+          max-width: 17.5rem;
+        //   margin-left: auto;
+        //   margin-right: auto;
+  
+        //   padding-left: 10%;
+        //   padding-right: 10%;
+  
+        //   .cardHeader {
+        //     padding-top: 2rem;
+        //     padding-bottom: 1.5rem;
+  
+        //     p {
+        //       margin-top: auto;
+        //       margin-bottom: auto;
+  
+        //       &.preciosCardItem1 {
+        //         font-family: $openSans;
+        //         font-size: $xx-large;
+        //         font-weight: $regular;
+        //       }
+        //       &.preciosCardItem2 {
+        //         font-family: $raleway;
+        //         font-size: $xx-large;
+        //         font-weight: $bold;
+        //       }
+        //     }
+        //   }
+  
+          .card-body {
+            // padding-top: 1rem;
+            // padding-bottom: 1rem;
+            // border-top: 1px solid $LavenderGray;
+            // border-bottom: 1px solid $LavenderGray;
+            height: 10rem;
+  
+            // ul {
+            //   margin-left: 1.5rem;
+  
+            //   li {
+            //     padding-left: 0.5rem;
+            //     padding-right: 0.5rem;
+            //     padding-bottom: 0.3rem;
+            //   }
+            // }
+          }
+        //   .preciosCardBoton {
+        //     margin-top: 2rem;
+        //     padding-bottom: 2rem;
+  
+        //     .preciosCardBoton-large-normal {
+        //       width: 100%;
+        //       padding-top: 0.5rem;
+        //       padding-bottom: 0.5rem;
+        //       background-color: $BallBlue;
+        //     }
+        //   }
+        }
+      }
+    }
+  }
+}

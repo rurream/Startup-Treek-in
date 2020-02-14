@@ -1,0 +1,149 @@
+
+nav{
+    // background: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    .navLogo{
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+    .navOptions{
+        align-self: center;
+        padding-left: 3rem;
+        text-decoration: none;
+        display: none;
+
+        ul{
+            text-decoration: none;
+
+            li{
+                display: inline-block;
+                padding-left: 1rem;
+                text-decoration: none;
+                
+                a{
+                    text-decoration: none;
+                    color: $Onyx;
+                }
+            }
+        }
+    }
+    .navBotones{
+        align-self: center;
+        margin-right: 2rem;
+        margin-left: auto;
+        display: none;
+    }
+    .navHamburguesa{
+        align-self: center;
+        margin-right: 2rem;
+        margin-left: auto;
+        display: block;
+
+        .fa-bars{
+            font-size: $xx-large;
+            
+        }
+
+    }
+    
+}
+ .menuHamburgesa{
+    text-decoration: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    transform: scale(0, 0);
+    border-bottom: 1px solid $SpanishGray;
+    transition: transform 1000ms linear;
+    // background-color: green;
+    ul{
+        text-decoration: none;
+         li{
+            padding-left: 1rem;
+            margin-bottom: 0.5rem;
+            // text-decoration: none;
+            list-style: none;
+         
+            a{
+                text-decoration: none;
+                color: $Nickel;
+                font-family: $raleway;
+                font-size: $medium;
+                font-weight: $bold;
+            }
+        }
+    }
+    .navBotonInactivo{
+        display: block;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    .navBotonActivo{
+        display: block;
+        margin-left: 1rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    nav{
+        //background: red;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    
+        .navLogo{
+            padding-left: 1rem;
+            padding-right: 1rem;
+    
+        }
+        .navOptions{
+            align-self: center;
+            padding-left: 3rem;
+            text-decoration: none;
+            display: block;
+    
+            ul{
+                text-decoration: none;
+    
+                li{
+                    display: inline-block;
+                    padding-left: 1rem;
+                    text-decoration: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: $Nickel;
+                        font-family: $raleway;
+                        font-size: $medium;
+                        font-weight: $regular;
+                    }
+                }
+            }
+        }
+        .navBotones{
+            align-self: center;
+            margin-right: 2rem;
+            margin-left: auto;
+            display: block;
+        }
+        .navHamburguesa{
+            align-self: center;
+            margin-right: 1rem;
+            margin-left: auto;
+            display: none;
+    
+        }
+    }
+}

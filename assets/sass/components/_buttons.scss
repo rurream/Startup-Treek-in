@@ -1,0 +1,41 @@
+
+
+.btNormalChico{
+    background-color: $BallBlue;
+    height: 2rem;
+    width: 6rem;
+    font-family: $raleway;
+    color: $White;
+    border: none;
+    font-weight: $bold;
+}
+
+.btNuevoChico{
+    background-color: $White;
+    height: 2rem;
+    width: 6rem;
+    font-family: $raleway;
+    color: $RaisingBlack;
+    border: none;
+    font-weight: $bold;
+}
+
+.btnRegularGrande{
+    background-color: $BallBlue;
+    height: 3rem;
+    width: 100%;
+    font-family: $raleway;
+    color: $White;
+    font-size: $medium;
+    border: none;
+    font-weight: $bold;
+
+}
+
+.respuestaBtn:hover{
+    background-color: $MiddleBlue;
+}
+.respuestaBtn:active{
+    background-color: $SilverChalice;
+}
+
